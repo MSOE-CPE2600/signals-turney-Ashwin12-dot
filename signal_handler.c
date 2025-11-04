@@ -31,6 +31,10 @@ void handle_signal() {
     counter++;
 }
 
+
+
+//------------------------------- part 4 
+
 int main() {
 
     // Register for the signal
