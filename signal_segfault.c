@@ -10,9 +10,17 @@
  */
 
 
+#include <signal.h>
+#include <stdlib.h>
 #include <stdio.h>
 
+void handle_segfaultSignal(){
+    printf("A segmentation fault occured - probably a pointer being referenced to null, then dereferenced so its just null\n");
+}
+
 int main (int argc, char* argv[]) {
+    signal(SIGSEGV, handle_segfaultSignal); //pass it to the helper method
+
     // Declare a null pointer
     int* i = NULL;
 
