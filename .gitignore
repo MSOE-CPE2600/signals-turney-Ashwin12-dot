@@ -1,6 +1,15 @@
 # Prerequisites
 *.d
 
+
+#executables
+handler
+
+
+
+
+
+
 # Object files
 *.o
 *.ko
